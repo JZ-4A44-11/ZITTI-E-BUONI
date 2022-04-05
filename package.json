@@ -1,0 +1,35 @@
+{
+  "name": "zitti-e-buoni",
+  "version": "0.0.1",
+  "description": "Dream until the dream come true",
+  "author": "Joseph Estevez <joseph.estevez@protonmail.com>",
+  "license": "LGPL-3.0-or-later",
+  "repository": "https://github.com/waterssh/the-embalmer.git",
+  "private": "false",
+  "homepage": "https://github.com/waterssh/ZITTI-E-BUONI#readme",
+  "bugs": "https://github.com/waterssh/ZITTI-E-BUONI/issues",
+  "main": "src/main.ts",
+  "scripts": {
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "fastify": "^3.27.4",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0"
+  }
+}
