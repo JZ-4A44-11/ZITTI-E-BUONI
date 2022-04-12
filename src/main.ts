@@ -1,20 +1,7 @@
-import fastify from 'fastify'
+import ZittieEBuonni from '~/modules/app'
 
-const server = fastify({
-  logger: process.env.NODE_ENV != 'production'
-})
-
-server.get('/', async () => {
-  return 'Loro non sanno di che parlo'
-})
-
-async function bootstrap() {
-  try {
-    const address = await server.listen(4444)
-    console.log(`Server listening at ${address}`)
-  } catch (err) {
-    console.log(err)
-    process.exit(1)
-  }
-}
-bootstrap()
+ZittieEBuonni.run()
+  .then(() => {
+    console.log('Loro non sanno di che parlo')
+  })
+  .catch((err) => console.log(err))

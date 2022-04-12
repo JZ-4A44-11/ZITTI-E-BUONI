@@ -5,14 +5,10 @@ module.exports = {
     node: true,
     jest: true
   },
+  extends: ['standard-with-typescript', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: 'tsconfig.json',
-    sourceType: 'module'
+    project: 'tsconfig.json'
   },
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended'
-  ],
-  ignorePatterns: ['.eslintrc.js']
-};
+  ignorePatterns: ['node_modules']
+}
